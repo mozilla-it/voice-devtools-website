@@ -36,9 +36,27 @@ $open-innovation-menu-differnce: 8px;
   }
 }
 
-// Hero with dark background.
-.c-hero--dark {
-  background-size: auto;
-  background: url("/images/home/home-hero.png") no-repeat center, $color-black;
-  color: $color-white;
+.mzp-l-content {
+  @media #{$mq-md} {
+    padding: $layout-xs $layout-lg;
+  }
+
+  @media #{$mq-lg} {
+    padding: $layout-xs $layout-xl;
+  }
+}
+
+// Navigation container.
+.mzp-c-navigation {
+  .mzp-c-navigation-container {
+    max-width: $content-max;
+
+    @media #{$mq-md} {
+      max-width: $content-max;
+    }
+
+    @media #{$mq-lg} {
+      max-width: $content-max;
+    }
+  }
 }

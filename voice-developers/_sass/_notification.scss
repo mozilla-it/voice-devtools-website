@@ -1,0 +1,134 @@
+.c-notification {
+  position: fixed;
+  bottom: 0;
+  max-width: 100%;
+  text-align: left;
+  z-index: 1;
+  margin: 24px 24px 24px 0;
+  padding: 12px 0 0;
+
+  &.mzp-t-dark {
+    background: linear-gradient(142.87deg, #6E008B 13.5%, #052852 59.68%)
+  }
+
+  .mzp-c-call-out-title {
+    padding-left: 80px;
+    font-size: 24px;
+    line-height: 26px;
+    max-width: 200px;
+  }
+
+  .mzp-c-call-out-container {
+    margin-bottom: 20px;
+  }
+
+  &__image-mobile {
+    position: absolute;
+    left: -20px;
+    top: 17px;
+  }
+
+  &.mzp-t-dark .mzp-c-call-out-desc {
+    color: $color-white;
+  }
+
+  .mzp-l-content {
+    position: relative;
+    min-width: 0;
+    padding: 35px 15px 30px 15px;
+
+    .mzp-c-call-out-content {
+      max-width: 100%;
+    }
+  }
+
+  .mzp-c-notification-bar-button {
+    right: 0;
+    left: auto;
+    top: 0;
+    margin: 17px;
+    background-color: transparent;
+    background: url("/images/home/close.svg") center center/20px 20px no-repeat;
+    height: 20px;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .mzp-c-button.mzp-t-secondary.mzp-t-dark {
+    padding: 13px 26px;
+    margin: 0;
+
+    &:hover {
+      background-color: #6E008B;
+    }
+  }
+
+  &__image {
+    display: none;
+  }
+
+  @media #{$mq-sm} {
+    margin: -48px 0 96px;
+    padding: 24px 48px 24px;
+    position: relative;
+
+    &__image-mobile {
+      display: none;
+    }
+
+    .mzp-c-call-out-container {
+      margin-bottom: 0;
+    }
+
+    &.mzp-t-dark {
+      background: linear-gradient(105.35deg, #6E008B 0%, #052852 37.21%);
+    }
+
+    &.mzp-t-dark .mzp-c-call-out-desc {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .mzp-l-content {
+      padding: 0 20px 0 127px;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    .mzp-c-call-out-title {
+      padding-left: 0;
+      font-size: 38px;
+      line-height: 40px;
+      max-width: 100%;
+    }
+
+    &__image {
+      display: block;
+      position: absolute;
+      left: -36px;
+      top: -62px;
+    }
+  }
+
+  @media #{$mq-lg} {
+
+    .mzp-l-content {
+      display: grid;
+      grid-template-columns: 8fr 2fr;
+      align-items: center;
+    }
+
+    .mzp-c-notification-bar-button {
+      height: 100%;
+      margin: 0 15px 0 0;
+    }
+
+    &.mzp-t-dark .mzp-c-call-out-desc {
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+  }
+}

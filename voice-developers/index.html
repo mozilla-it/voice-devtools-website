@@ -2,10 +2,35 @@
 layout: default
 title: Mozilla
 ---
-<section class="mzp-c-hero c-hero--dark mzp-has-image mzp-t-mozilla">
+<section class="mzp-c-hero c-hero c-hero--dark mzp-has-image mzp-t-mozilla">
   <div class="mzp-l-content">
+    <aside role="note" class="mzp-c-notification-bar c-notification mzp-c-call-out-compact mzp-t-mozilla mzp-t-dark">
+        <div class="mzp-l-content">
+          <div class="mzp-c-call-out-content">
+            <div class="mzp-c-call-out-container">
+              <img class="c-notification__image" src="{{ './images/home/bot.png' }}" alt="Common Voice">
+              <img class="c-notification__image-mobile" src="{{ './images/home/head-bot.png' }}" alt="Common Voice">
+              <h2 class="mzp-c-call-out-title">Common Voice has moved</h2>
+              <p class="mzp-c-call-out-desc">Head over to the new home of Common Voice at commonvoice.mozilla.org to resume contributing.</p>
+            </div>
+          </div>
+          <div class="mzp-c-call-out-cta">
+            <div class="mzp-c-call-out-cta-container">
+              <div class="mzp-c-button-download-container">
+                <a href="#" class="mzp-c-button mzp-t-secondary mzp-t-dark">
+                  Common Voice
+                </a>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      <button class="mzp-c-notification-bar-button"
+              type="button">Close notification</button>
+    </aside>
     <div class="mzp-c-hero-body">
       <h1 class="mzp-c-hero-title">Welcome to Mozilla Voice</h1>
+      <img class="c-hero__image-mobile" src="{{ './images/home/hero-banner-mobile.png' }}" alt="Common Voice">
       <div class="mzp-c-hero-desc">
         <p><strong>The new home for machine-learning based voice technologies - including software, tools, and datasets.</strong></p>
         <div>Voice technology should be available to everyone, in every language. We want to make it easy and affordable to deploy voice experiences through a set of comprehensive, commercially competitive, collaboratively built, open voice tools. Creating this set of tools will enable more businesses and forward-thinking developers around the globe to innovate by voice-enabling applications and/or devices without relying on Big Tech.</div>
@@ -56,6 +81,7 @@ title: Mozilla
     <h4>Blog</h4>
     <div class="mzp-l-card-quarter js-section-blog"></div>
     <script src="{{ './js/medium-blog-posts.js' }}"></script>
+    <script src="{{ './js/notification.js' }}"></script>
     <div class="c-section-blog-link">
       <a rel="noopener noreferrer"  href="https://medium.com/mozilla-open-innovation" class="mzp-c-button">Visit Blog</a>
     </div>

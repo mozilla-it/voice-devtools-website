@@ -1,0 +1,28 @@
+// Hero with dark background.
+.c-hero {
+  &--dark {
+    background-color:$color-black;
+    color: $color-white;
+    text-align: left;
+
+    & > .mzp-l-content {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+
+    @media #{$mq-md} {
+      background: url("/images/home/home-hero.png") no-repeat, $color-black;
+      padding: 72px 0 33px;
+      background-size: auto 720px;
+      background-position: 80% bottom;
+
+      & > .mzp-l-content {
+        padding: 24px 64px;
+      }
+
+      .c-hero__image-mobile {
+        display: none;
+      }
+    }
+  }
+}
