@@ -1,0 +1,25 @@
+#-------------------------------
+# General Site Settings
+title: "Open Innovation Team"
+description: "Openness, community, collaboration are the core values of open innovation."
+open_graph_image: "/images/oi-og-image.png"
+open_graph_image_alt: "Open Innovation Team by Mozilla"
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "" # The base hostname & protocol for your site, e.g. http://oi.mozilla.org
+
+#-------------------------------
+# Navigation Settings
+menu:
+  - {title: Projects, url: '/projects.html'}
+  - {title: Research and Tooling, url: '/research.html'}
+
+#-------------------------------
+# Build settings
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: compact
+
+include:
+  - "_pages"

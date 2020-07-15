@@ -1,0 +1,44 @@
+// Add extra spacing below homepage hero.
+@media #{$mq-lg} {
+  .mzp-c-hero {
+    margin-bottom: $spacing-2xl;
+  }
+}
+
+// Navigation logo
+$open-innovation-menu-differnce: 8px;
+.c-navigation-logo {
+  float: left;
+
+  @media #{$mq-md} {
+    margin: $spacing-lg ($spacing-sm * 2) ($spacing-lg - $open-innovation-menu-differnce) 0;
+  }
+
+  @media #{$mq-lg} {
+    margin: $spacing-lg ($spacing-md * 2) ($spacing-lg - $open-innovation-menu-differnce) 0;
+  }
+
+  @media #{$mq-xl} {
+    margin: $spacing-lg ($spacing-lg * 2) ($spacing-lg - $open-innovation-menu-differnce) 0;
+  }
+}
+
+// Add a border bottom to active menu item.
+.mzp-c-menu-category .mzp-c-menu-title {
+  border-bottom: 1px solid transparent;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &.is-active {
+    text-decoration: none;
+    border-bottom: 1px solid $color-black;
+  }
+}
+
+// Hero with dark background.
+.c-hero--dark {
+  background-size: auto;
+  background: url("/images/home/home-hero.png") no-repeat center, $color-black;
+  color: $color-white;
+}

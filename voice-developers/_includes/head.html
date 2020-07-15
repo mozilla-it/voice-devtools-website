@@ -1,0 +1,55 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
+
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | absolute_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/favicon/apple-touch-icon.png' | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon/favicon-32x32.png' | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon/favicon-16x16.png' | absolute_url }}">
+  <link rel="manifest" href="{{ '/images/favicon/site.webmanifest' | absolute_url }}">
+  <link rel="mask-icon" href="{{ '/images/favicon/safari-pinned-tab.svg' | absolute_url }}" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="{{ '/images/favicon/browserconfig.xml' | absolute_url }}">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@mozilla">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}">
+  {% if page.open_graph_image %}
+  <meta name="twitter:image" content="{{ page.open_graph_image | absolute_url }}">
+  <meta name="twitter:image:alt" content="{{ page.open_graph_image_alt }}">
+  {% else %}
+  <meta name="twitter:image" content="{{ site.open_graph_image | absolute_url }}">
+  <meta name="twitter:image:alt" content="{{ site.open_graph_image_alt }}">
+  {% endif %}
+
+  <!-- Facebook -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url}}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}">
+  <meta property="og:site_name" content="Mozilla">
+  {% if page.open_graph_image %}
+  <meta property="og:image" content="{{ page.open_graph_image | absolute_url }}">
+  {% else %}
+  <meta property="og:image" content="{{ site.open_graph_image | absolute_url }}">
+  {% endif %}
+
+  <!-- begin CSS files -->
+  <link rel="stylesheet" href="{{ './mozilla-protocol/css/protocol.min.css' }}" />
+  <link rel="stylesheet" href="{{ './mozilla-protocol/css/protocol-extra.min.css' }}" />
+  <link rel="stylesheet" href="{{ './css/main.css' }}" />
+  <!-- begin CSS files -->
+
+  <!-- begin javascript files -->
+  <script src="{{ './mozilla-protocol/js/protocol-base.js' }}"></script>
+  <script src="{{ './mozilla-protocol/js/protocol-utils.js' }}"></script>
+  <script src="{{ './mozilla-protocol/js/protocol-supports.js' }}"></script>
+  <!-- end javascript files -->
+  {% include google-analytics.html %}
+</head>

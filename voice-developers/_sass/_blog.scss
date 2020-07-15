@@ -1,0 +1,16 @@
+// Blog styles
+
+.c-section-blog {
+  padding-top: $spacing-2xl;
+  background-color: $color-moz-light-gray;
+  padding-bottom: $spacing-2xl;
+
+  &-link {
+    text-align: center;
+  }
+
+  h4 {
+    padding-bottom: $spacing-md;
+    text-align: center;
+  }
+}

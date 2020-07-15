@@ -1,0 +1,14 @@
+// Footer styles overrides
+
+.mzp-c-footer-primary {
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: underline;
+  }
+}
