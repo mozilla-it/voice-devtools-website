@@ -12,3 +12,43 @@
     text-decoration: underline;
   }
 }
+
+.mzp-c-footer-secondary {
+  @media #{$mq-md} {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.mzp-c-footer-terms,
+.mzp-c-footer-license {
+  max-width: 100%;
+}
+
+.mzp-c-footer-terms {
+  padding-right: 20px;
+}
+
+.mzp-c-footer-heading {
+  padding: 16px 0 0;
+}
+
+.mzp-c-footer-list li {
+  list-style-type: none;
+  padding: 8px 0;
+}
+
+.mzp-c-footer-sections {
+  border-bottom: 1px solid #F1F0F3;
+}
+
+@media #{$mq-md} {
+  .mzp-c-footer-section:first-child:nth-last-child(n+2),
+  .mzp-c-footer-section:first-child:nth-last-child(n+2) ~ .mzp-c-footer-section:nth-child(1n-1) {
+    width: 204px;
+  }
+
+  .mzp-c-footer-heading {
+    padding: 8px 0;
+  }
+}
