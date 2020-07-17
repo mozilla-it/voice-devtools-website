@@ -61,6 +61,7 @@ $open-innovation-menu-differnce: 8px;
   }
 }
 
+// Card component overrides.
 .mzp-c-card-feature {
   margin: 32px auto 32px;
 
@@ -78,4 +79,17 @@ $open-innovation-menu-differnce: 8px;
   .mzp-c-card-content {
     padding: 16px;
   }
+}
+
+// Display close button in flyout menu.
+// Functionality doesn't work. Temporarily disabled.
+//@media #{$mq-md} {
+//  .mzp-c-menu.mzp-is-basic .mzp-c-menu-panel .mzp-c-menu-button-close {
+//    display: block;
+//  }
+//}
+
+// Display flyout card item in mobile.
+.mzp-c-menu-panel.mzp-has-card .mzp-c-menu-panel-card {
+  display: block;
 }
