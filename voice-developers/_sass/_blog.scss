@@ -1,8 +1,8 @@
 // Blog styles
 
 .c-section-blog {
-  padding-top: $spacing-2xl;
-  background-color: $color-moz-light-gray;
+  padding-top: 40px;
+  background-color: $color-blog-gray;
   padding-bottom: $spacing-2xl;
 
   &-link {
@@ -10,7 +10,6 @@
   }
 
   h4 {
-    padding-bottom: $spacing-md;
-    text-align: center;
+    padding-bottom: $spacing-xs*3;
   }
 }

@@ -61,8 +61,21 @@ $open-innovation-menu-differnce: 8px;
   }
 }
 
-.mzp-c-card-feature.mzp-l-card-feature-left-half,
-.mzp-c-card-feature.mzp-l-card-feature-right-half {
-  grid-column-gap: 96px;
-  column-gap: 96px;
+.mzp-c-card-feature {
+  margin: 32px auto 32px;
+
+  .mzp-c-card-feature-content {
+    margin-top: 32px;
+  }
+
+  &.mzp-l-card-feature-left-half,
+  &.mzp-l-card-feature-right-half {
+    grid-column-gap: 96px;
+  }
+}
+
+.mzp-c-card {
+  .mzp-c-card-content {
+    padding: 16px;
+  }
 }
