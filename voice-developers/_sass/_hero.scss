@@ -1,15 +1,12 @@
 // Hero with dark background.
 .c-hero {
   &--dark {
-    background-color:$color-black;
+    background-color: $color-black;
     color: $color-white;
     text-align: left;
+  }
 
-    & > .mzp-l-content {
-      padding-top: 40px;
-      padding-bottom: 0;
-    }
-
+  &--background-image {
     @media #{$mq-md} {
       background: url("/images/home/home-hero.png") no-repeat, $color-black;
       padding: 72px 0 33px;
@@ -22,6 +19,83 @@
 
       .c-hero__image-mobile {
         display: none;
+      }
+    }
+
+    & > .mzp-l-content {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+  }
+
+  &--compact {
+    padding: 24px;
+    overflow: hidden;
+
+
+    & > .mzp-l-content {
+      z-index: 1;
+    }
+
+    .mzp-c-hero-title {
+      margin: 8px 0 0;
+    }
+
+    .mzp-c-hero-image {
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      z-index: 0;
+      left: 50%;
+      right: -150%;
+
+      img {
+        min-height: 100%;
+        object-fit: cover;
+        object-position: left;
+        transform: scale(1) rotate(-90deg) translateX(30px) translateY(-60px);
+        height: 280%;
+        bottom: unset;
+        max-height: none;
+      }
+    }
+
+    @media #{$mq-sm} {
+      .mzp-c-hero-image {
+        img {
+          transform: scale(1.5) rotate(-90deg);
+        }
+      }
+    }
+
+    @media #{$mq-md} {
+      background: $color-black;
+      margin-bottom: 96px;
+
+      &.mzp-has-image {
+        min-height: 176px;
+        padding: 0;
+
+        .mzp-c-hero-body {
+          margin-right: 0;
+          width: 100%;
+        }
+      }
+
+      & > .mzp-l-content {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .mzp-c-hero-title {
+        margin: 8px 0;
       }
     }
   }

@@ -93,3 +93,18 @@ $open-innovation-menu-differnce: 8px;
 .mzp-c-menu-panel.mzp-has-card .mzp-c-menu-panel-card {
   display: block;
 }
+
+// Buttons with icons.
+.mzp-c-button.mzp-c-button-icon {
+  padding: 14px 30px 14px 64px;
+  background-repeat: no-repeat;
+  background-position: 30px center;
+
+  &--github {
+    background-image: url("/images/icons/github.svg");
+  }
+
+  &--discussion {
+    background-image: url("/images/icons/discussion.svg");
+  }
+}

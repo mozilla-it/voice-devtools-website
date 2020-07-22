@@ -1,0 +1,25 @@
+.c-blockquote {
+  background: url("/images/blockquote.png") no-repeat bottom right -150px, $color-black;
+  color: $color-white;
+
+  &.mzp-l-content {
+    min-width: 0;
+  }
+
+  blockquote {
+    border-color: $color-moz-neon-green;
+  }
+
+  @media #{$mq-md} {
+    background-position: bottom right;
+
+    &.mzp-l-content {
+      padding: 96px;
+      max-width: 608px;
+    }
+
+    blockquote {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.c-decorative {
+  display: none;
+
+  @media #{$mq-md} {
+    position: absolute;
+    max-width: none;
+    display: block;
+    left: 0;
+
+    &--container {
+      overflow: hidden;
+    }
+
+    &--rectangle {
+      left: 51%;
+      bottom: -27%;
+      z-index: 1;
+    }
+
+    &--divider {
+      bottom: -66px;
+      left: 15%;
+      z-index: -1;
+    }
+  }
+}
+
+@media #{$mq-md} {
+  .c-decorative--container {
+    .mzp-c-card-feature {
+      .mzp-c-card-feature-media {
+        z-index: 1;
+        overflow: visible;
+
+        img {
+          width: auto
+        }
+      }
+    }
+  }
+}

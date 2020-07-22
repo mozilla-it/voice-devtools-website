@@ -5,20 +5,6 @@
     grid-column-gap: 20px;
   }
 
-  &__col {
-    &:first-child {
-      grid-area: col1;
-    }
-
-    &:nth-child(2) {
-      grid-area: col2;
-    }
-
-    &:nth-child(3) {
-      grid-area: col3;
-    }
-  }
-
   &--dark-wrapper {
     padding: 0;
     background-color: $color-black;
@@ -40,6 +26,53 @@
 
     @media #{$mq-lg} {
       padding: 57px;
+
+      &__col {
+        &:first-child {
+          grid-area: col1;
+        }
+
+        &:nth-child(2) {
+          grid-area: col2;
+        }
+
+        &:nth-child(3) {
+          grid-area: col3;
+        }
+      }
+    }
+  }
+
+  &--gray {
+    background-color: $color-marketing-gray-20;
+    padding: 32px;
+    max-width: 1316px;
+
+    .mzp-c-card-feature-media {
+      overflow: visible;
+      margin-top: 32px;
+
+      @media #{$mq-lg} {
+        margin-top: 0;
+      }
+
+        img {
+        margin-top: 16px;
+        margin-bottom: -64px;
+      }
+    }
+
+    .mzp-c-card-feature-desc {
+      display: inline-flex;
+      flex-direction: column;
+
+      a {
+        width: fit-content;
+
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
     }
   }
 
