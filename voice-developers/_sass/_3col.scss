@@ -27,7 +27,7 @@
     @media #{$mq-lg} {
       padding: 57px;
 
-      &__col {
+      .l-3col__col {
         &:first-child {
           grid-area: col1;
         }
