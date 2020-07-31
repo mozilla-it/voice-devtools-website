@@ -1,0 +1,13 @@
+<div class="c-section-blog">
+    <div class="mzp-l-content">
+      <div class="mzp-t-mozilla">
+        <h4>{{ include.title }}</h4>
+      </div>
+      <div class="mzp-l-card-quarter {{include.class}}"></div>
+      <script src="{{ '/js/utils.js' }}"></script>
+      {% assign js_urls = include.js | split: ' ' %}
+      {% for url in js_urls %}
+      <script src="{{ url }}"></script>
+      {% endfor %}
+    </div>
+  </div>
