@@ -1,0 +1,92 @@
+---
+layout: default
+title: {{ page.title }}
+description: {{ page.description }}
+permalink: {{ page.permalink }}
+---
+{% assign data = site.data.stt %}
+{% if page.data-source == 'tts' %}
+    {% assign data = site.data.tts %}
+{% endif %}
+{% include hero.html title=data.hero-title %}
+<div class="mzp-l-content c-decorative--container">
+    <section class="mzp-c-card-feature mzp-has-aspect-1-1 mzp-l-card-feature-left-half">
+      <div class="mzp-c-card-feature-media-wrapper">
+        <div class="mzp-c-card-feature-media">
+          <img src="{{ './images/tts-stt/voice-stt.png' }}" alt="Voice STT">
+          <img class="c-decorative c-decorative--rectangle" src="{{ './images/tts-stt/rectangles-assymetric.png' }}"
+               alt="Decorative rectangles">
+          <img class="c-decorative c-decorative--divider" src="{{ './images/divider.png' }}" alt="Decorative divider">
+        </div>
+      </div>
+      
+      <div class="mzp-c-card-feature-content">
+        <div class="mzp-c-card-feature-content-container">
+          <p>
+              {{ data.description-title }}
+          </p>
+          <div class="mzp-c-card-feature-desc">
+            <p>
+                {{ data.description-body-p1 }}
+            <p>
+                {{ data.description-body-p2 }}
+            </p>
+          </div>
+          <a href="{{ data.repo }}"
+             class="mzp-c-button mzp-t-secondary mzp-t-xl mzp-c-button-icon mzp-c-button-icon--github">
+            GitHub Repository
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="mzp-l-content">
+    <div class="mzp-l-content mzp-t-content-md c-blockquote">
+      <blockquote class="mzp-t-mozilla">
+        <p>
+            {{ data.blockquote }}
+        </p>
+      </blockquote>
+    </div>
+  </div>
+  <div class="mzp-l-content mzp-t-mozilla">
+    <div class="l-3col--dark-wrappers">
+      <div class="l-3col">
+        <h2 class="mzp-c-hero-title l-3col__col">Getting Started</h2>
+        <p class="l-3col__col">
+          {{ data.getting-started-col-1 }}
+        </p>
+        <div class="l-3col__col">
+          {{ data.getting-started-col-2 }}
+        </div>
+      </div>
+    </div>
+  </div>  
+  <section class="mzp-l-content mzp-c-card-feature c-project-links mzp-has-aspect-1-1 l-3col l-3col--gray">
+    <div class="mzp-c-card-feature-content">
+      <div class="mzp-c-card-feature-content-container">
+        <h2 class="mzp-u-title-xs">Project links and resources</h2>
+      </div>
+    </div>
+    <div class="mzp-c-card-feature-content">
+      <div class="mzp-c-card-feature-content-container">
+        <div class="mzp-c-card-feature-desc">
+          <a href="{{ data.repo }}"
+             class="mzp-c-button mzp-t-secondary mzp-t-xl mzp-c-button-icon mzp-c-button-icon--github">GitHub
+            Repository</a>
+            <!-- TODO: forum links for both pages -->
+          <a href="https://common.voice.mozilla.org/"
+             class="mzp-c-button mzp-t-secondary mzp-t-xl mzp-c-button-icon mzp-c-button-icon--discussion">Discussion
+            Forum</a>
+            <!-- TODO: readme link for stt -->
+          <a href="https://common.voice.mozilla.org/" class="mzp-c-button mzp-t-secondary mzp-t-xl">Read Me</a>
+        </div>
+      </div>
+    </div>
+    <div class="mzp-c-card-feature-media-wrapper">
+      <div class="mzp-c-card-feature-media">
+        <img src="{{ './images/tts-stt/project-links-illustration.png' }}" alt="Get Started with Common Voice">
+      </div>
+    </div>
+  </section>
+  {% include news.html title=data.news-title class=data.js-news-class js=data.js_urls %}
