@@ -1,0 +1,13 @@
+{
+    "hero-title": "Mozilla Voice TTS",
+    "description-title": "<strong>Speech synthesis is a very challenging task due to its high technical requirements. We want to help overcome those.</strong>",
+    "description-body-p1": "Started as a research project, Mozilla Voice TTS is an early stage, open source Text-to-Speech solution which aims to provide the tools necessary for developers to create TTS systems, including conversational interfaces, smart assistants, and accessibility tools.",
+    "description-body-p2": "Mozilla Voice TTS is based on advanced machine learning methods (Tacotron) which enable high quality, natural voice synthesis, enabling comparable or better results in relation to any currently existing commercial or open-source solution. ",
+    "blockquote": "\"Mozilla Voice TTS is based on advanced machine learning methods (Tacotron) which enable high quality, natural voice synthesis\"",
+    "getting-started-col-1": "Right now, Mozilla Voice TTS is an open source solution which enables easy adaptation to different languages with almost no code change. By utilizing and adapting state-of-the-art techniques, we want to deliver performant results in high and low-end platforms. <br><br>Help us grow an international community to create a self-sustaining ecosystem and expand the use of our TTS technology to a variety of languages and technical applications.",
+    "getting-started-col-2": "<p>How to be part of it? Take a look at our <a rel=\"noopener noreferrer\" href=\"https://github.com/mozilla/TTS/wiki\">Mozilla Voice TTS 0.1</a> including a pre-trained English model, tools to reproduce our results, related documentations and an easy-to-use installation mechanism. Or join our TTS forum on <a rel=\"noopener noreferrer\" href=\"https://discourse.mozilla.org/c/deep-speech\">Discourse<a/>.</p>",
+    "repo": "https://github.com/mozilla/TTS",
+    "js-news-class": "js-tts-blog",
+    "js_urls":"/js/tts.js",
+    "news-title": "Voice TTS News"
+}
