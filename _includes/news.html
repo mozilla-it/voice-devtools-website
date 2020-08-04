@@ -1,0 +1,19 @@
+<!-- 
+  @params:
+    title: a string describing the section title
+    class: a class selector used by an included js file to inject posts into the div container (see renderPosts function in '../js/utils.js')
+    urls: a list of urls for js files necessary for rendering posts correctly
+ -->
+<div class="c-section-blog">
+    <div class="mzp-l-content">
+      <div class="mzp-t-mozilla">
+        <h4>{{ include.title }}</h4>
+      </div>
+      <div class="mzp-l-card-quarter {{include.class}}"></div>
+      <script src="{{ '/js/utils.js' }}"></script>
+      {% assign js_urls = include.js | split: ' ' %}
+      {% for url in js_urls %}
+      <script src="{{ url }}"></script>
+      {% endfor %}
+    </div>
+  </div>

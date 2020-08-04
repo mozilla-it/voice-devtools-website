@@ -1,0 +1,15 @@
+{
+    "hero-title": "Mozilla Voice STT",
+    "decorative-img-src": "./images/tts-stt/voice-stt.png",
+    "description-title": "Mozilla Voice STT (formerly research project “Deep Speech”) is an advanced open-source Speech-to-Textengine which aims to make speech recognition technology openly available to developers.",
+    "description-body-p1": "Supported by a community of like-minded developers, companies, and researchers, we have applied sophisticated machine learning techniques and a variety of innovations to build a deep learning-based STT engine that approaches human accuracy. Implemented with Google’s TensorFlow framework, it can run on anything from an off-line Raspberry Pi 4 to a server class machine, obviating the need to pay patent royalties or exorbitant fees for existing STT services.",
+    "description-body-p2": "Together with the growing Common Voice dataset we believe this technology can and will enable a wave of innovative products and services, and that it should be available to everyone.",
+    "blockquote": "\"We have applied sophisticated machine learning techniques and a variety of innovations to build a deep learning-based STT engine that approaches human accuracy.\"",
+    "getting-started-col-1": "Mozilla Voice STT is a vibrant open source tool. Building on this foundation guarantees future developer support and continued performance optimizations. Its architecture allows for easy localization. No advanced linguistic knowledge is required to localize to a particular language, only data. This is in stark contrast to more traditional STT architectures, where advanced linguistic knowledge is required and hinders adoption by under-resourced languages.",
+    "getting-started-col-2": "Mozilla Voice STT offers packages for .NET, Python, JavaScript, and C bindings all available on GitHub. You can download our pre-trained models and start using Mozilla Voice STT in minutes. If you’d like to know more, you can find detailed release notes in the GitHub repo; installation and usage explanations in our <a rel=\"noopener noreferrer\" href=\"https://deepspeech.readthedocs.io/en/latest/\"> README</a>.",
+    "getting-started-col-3":"If that doesn’t cover what you’re looking for, you can also use our <a rel=\"noopener noreferrer\" href=\"https://discourse.mozilla.org/c/deep-speech\">discussion forum</a>.",
+    "repo":"https://common.voice.mozilla.org/",
+    "js-news-class": "js-stt-blog",
+    "js_urls":"/js/stt.js",
+    "news-title": "Voice STT News"
+}

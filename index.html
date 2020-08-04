@@ -117,14 +117,4 @@ description: The new home for machine-learning based voice technologies -- inclu
   </div>
 </div>
 
-<div class="c-section-blog">
-  <div class="mzp-l-content">
-    <div class="mzp-t-mozilla">
-      <h4>Latest News</h4>
-    </div>
-    <div class="mzp-l-card-quarter js-section-blog"></div>
-    <script src="{{ './js/medium-blog-posts.js' }}"></script>
-    <script src="{{ './js/common-voice-blog-posts.js' }}"></script>
-    <script src="{{ './js/notification.js' }}"></script>
-  </div>
-</div>
+{% include news.html title="Latest News" class="js-section-blog" js="/js/utils.js /js/medium-blog-posts.js /js/common-voice-blog-posts.js /js/notification.js" %}
