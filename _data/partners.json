@@ -1,0 +1,129 @@
+{
+    "data": [
+        {
+            "banner": "./images/partners/bmz-giz.png",
+            "title":"BMZ & GIZ",
+            "body": "In late 2019 <a href=\"https://blog.mozilla.org/press/2019/11/mozilla-and-bmz-announce-cooperation-to-open-up-voice-technology-for-african-languages/\" rel=\"noopener noreferrer\">Mozilla started collaborating</a> with the Federal Ministry for Economic Cooperation and Development of the Federal Republic of Germany (BMZ) and its implementation organization <a href=\"https://www.giz.de/en/html/index.html\" rel=\"noopener noreferrer\">Deutsche Gesellschaft für Internationale Zusammenarbeit</a> (GIZ). Under the umbrella  initiative \"FAIR Forward – Artificial Intelligence for All\" we want to open up voice technology for African languages.",
+            "links": [
+                {
+                    "description": "Sustainable tech development needs local solutions: Voice tech ideation in Kigali",
+                    "url": "https://medium.com/mozilla-open-innovation/sustainable-tech-development-needs-local-solutions-voice-tech-ideation-in-kigali-ec8dd33e0823"
+                },
+                {
+                    "description": "Mozilla and BMZ Announce Cooperation to Open Up Voice Technology for African Languages ",
+                    "url":"https://blog.mozilla.org/press/2019/11/mozilla-and-bmz-announce-cooperation-to-open-up-voice-technology-for-african-languages/"
+                },
+                {
+                    "description": "FAIR Forward – Artifical Intelligence for All ",
+                    "url":"https://toolkit-digitalisierung.de/en/fair-forward/"
+                }
+            ]
+        },
+        {
+            "banner": "./images/partners/digital-umuganda.png",
+            "title": "Digital Umuganda",
+            "body": "<a href=\"https://digitalumuganda.com\" rel=\"noopener noreferrer\">Digital Umuganda</a> is a young Rwandan Artificial Intelligence startup focusing on voice technologies. Together with them and other partners in Rwanda, we are building an open speech corpus in <a href=\"https://en.wikipedia.org/wiki/Kinyarwanda\" rel=\"noopener noreferrer\">Kinyarwanda</a> up to a capacity so it can be used to train a speech-to-text-engine for a use case in support of the UN's <a href=\"https://sustainabledevelopment.un.org/\" rel=\"noopener noreferrer\">Sustainable Development Goals</a>. In the long term, the initiative aims to empower local communities to build inclusive voice technologies in their own language and allow for local value creation.",
+            "links":[
+                {
+                    "description":"Mozilla Welcomes Two New Fellows in Voice Technology",
+                    "url":"https://foundation.mozilla.org/en/blog/mozilla-welcomes-two-new-fellows-voice-technology/"
+                },
+                {
+                    "description": "Rwandan startup wins over Rwf3 billion Covid-19 hackathon",
+                    "url": "https://www.newtimes.co.rw/technology/rwandan-startup-wins-over-rwf3-billion-covid-19-hackathon"
+                },{
+                    "description": "re:publica 2019 – Let there be data! Exploring data as a common good and ways to build it",
+                    "url": "https://www.youtube.com/watch?v=YihNXFj-n2Q"
+                }
+            ]
+        },
+        {
+            "banner": "./images/partners/bangor.png",
+            "title":"Bangor University Wales",
+            "body":"The cross-disciplinary research unit based at Bangor University, Wales made up of linguists, terminologists and software developers has not only been the driving force behind growing the Welsh (Cymraeg) Common Voice dataset, but also started very early training models with Mozilla Voice STT. These models were successfully utilised in an Android based user/consumer-ready version of a Welsh language personal assistant.",
+            "links":[
+                {
+                    "description": "Bangor University helps Mozilla with Welsh speech technology",
+                    "url":"https://www.bangor.ac.uk/canolfanbedwyr/news/bangor-university-helps-mozilla-with-welsh-speech-technology-37105"
+                },
+                {
+                    "description": "Welsh Common Voice Campaign’s 1st Anniversary ",
+                    "url":"https://www.bangor.ac.uk/news/news/welsh-common-voice-campaign-s-1st-anniversary-40845"
+                },
+                {
+                    "description": "Research",
+                    "url": "https://www.bangor.ac.uk/canolfanbedwyr/ymchwil_TI.php.en"
+                }
+            ]
+        },
+        {
+            "banner":"./images/partners/mycroft-ai.png",
+            "title": "Mycroft AI",
+            "body": "<a href=\"https://mycroft.ai/\" rel=\"noopener noreferrer\">Mycroft</a> builds its voice assistant in the open so it can be remixed, extended, and improved -- which  aligns well with our own values and mission. Their developer team has been testing and working with our STT engine from very early on, providing valuable feedback throughout its development. Mycroft is offering a Mozilla Voice STT powered version of its voice assistant and has been a strong supporter of our Common Voice initiative to crowdsource open datasets for training.",
+            "links": [
+                {
+                    "description": "DeepSpeech in Mycroft",
+                    "url": "https://mycroft.ai/blog/deepspeech-update/"
+                }
+            ]
+        },
+        {
+            "banner":"./images/partners/ibm.png",
+            "title": "IBM",
+            "body": "The <a href=\"https://www.ibm.com/opensource/centers/codait/\" rel=\"noopener noreferrer\">Center for Open Source Data and AI Technologies</a> (CODAIT) at IBM has been a vocal supporter of our Voice Developer Tools and open data collection: “It is time for open innovations in voice, with support and outreach for minor languages and dialects as well as popular languages – Mozilla’s Common Voice is a step in that direction.” - Jim Sporer, IBM. Opportunities to speak at IBM conferences as well as inclusion in IBM’s “Call for Code” program have helped bring our voice tools to the attention of a global developer audience.",
+            "links": [
+                {
+                    "description": "Useful data sets for Call for Code",
+                    "url": "https://developer.ibm.com/callforcode/blogs/useful-data-sets-for-call-for-code-2020"
+                },
+                {
+                    "description": "Mozilla Communities & Contributor Report 2019",
+                    "url":"https://report.mozilla.community/"
+                }
+            ]
+        },
+        {
+            "banner": "./images/partners/dlr.png",
+            "title": "DLR",
+            "body": "The German Aerospace Center <a href=\"https://www.dlr.de/EN/Home/home_node.html\" rel=\"noopener noreferrer\">(DLR)</a> has teamed up with us to investigate whether Mozilla Voice STT could be used for voice-based robot control as an add-on to DLR’s voice transmission software “openvocs”. Depending on initial prototyping DLR also considers contributing to our Voice Tools through further tests, speech examples, and recordings that could improve the accuracy of the models.",
+            "links": [
+                {
+                    "description": "DLR and Mozil­la are re­search­ing tech­nolo­gies for voice con­trol of robots",
+                    "url": "https://www.dlr.de/content/en/articles/news/2020/03/20200701_dlr-and-mozilla-researching-technologies-for-voice-control-of-robots.html"
+                },{
+                    "description": "Space Operations and Astronaut Training",
+                    "url": "https://www.dlr.de/rb/en"
+                }
+            ]
+        },
+        {
+            "banner": "./images/partners/te-hiku-media.png",
+            "body": "<a href=\"https://tehiku.nz/\" rel=\"noopener noreferrer\">Te Hiku Media</a> uses Mozilla Voice STT to transcribe their te reo Māori radio shows and archives. This is part of a larger research initiative, Papa Reo, that’s funded by New Zealand’s Ministry of Business, Innovation and Employment (MBIE). The project aims to establish a multilingual language platform to develop natural language processing tools and methods that will enable New Zealanders to engage with technology in the language they use, or aspire to use, every day. A primary goal of Papa Reo is to ensure Pacific languages are not excluded from digital technologies. Over the next years, the programme will bring together leading data scientists from New Zealand, Cambridge and Oxford Universities, Māori and Pacific communities and Mozilla in a unique collaboration to tackle this challenge.",
+            "title": "Te Hiku Media",
+            "links": [
+                {
+                    "description": "Learn More: Papa Reo",
+                    "url": "https://papareo.nz"
+                }
+            ]
+        },
+        {
+            "banner": "./images/partners/iara.png",
+            "title": "Iara Health",
+            "body": "<a href=\"https://iarahealth.com/\" rel=\"noopener noreferrer\">Iara Health</a> is a Brazilian startup providing transcription services for health professionals. The young company has integrated Mozilla Voice STT into their transcription tool. They also trained their own Brazilian Portuguese models for this specialized use case. This allows for program commands and dictation into medical report templates without typing, so they can fully concentrate on the actual diagnoses while saving time. ",
+            "links":[]
+        },
+        {
+            "banner":"./images/partners/petpooja.png",
+            "title": "Petpooja",
+            "body": "<a href=\"http://www.petpooja.com\" rel=\"noopener noreferrer\">Petpooja</a> is a large point-of-sale platform powering 15,000+ restaurants across India and the UAE. To further their goal of using automation for more customer convenience, Petpooja has been working on a voice-ordering system for restaurants that understands customers' spoken orders and then prints both the kitchen ticket and the bill. Their data science team has been using Mozilla Voice STT to create the underlying model for this industry application, trained on over 1.8 million audio clips of various menu items, including varying accents from different parts of India.",
+            "links":[]
+        },
+        {
+            "banner":"./images/partners/accelerate-networks.png",
+            "title": "Accelerate Networks",
+            "body": "The communications provider <a href=\"https://acceleratenetworks.com\" rel=\"noopener noreferrer\">Accelerate Networks</a> has <a href=\"https://docs.fusionpbx.com/en/latest/applications/voicemail_transcription.html?highlight=mozilla#custom-api\" rel=\"noopener noreferrer\">integrated Mozilla Voice STT</a> into <a href=\"https://www.fusionpbx.com/\" rel=\"noopener noreferrer\"> FusionPBX</a>, an open source PBX, and is using it in production for their clients.",
+            "links":[]
+        }
+    ]
+}
