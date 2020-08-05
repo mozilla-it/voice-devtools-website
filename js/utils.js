@@ -13,9 +13,28 @@ function postCard(post) {
     </section>`
 }
 
-function renderPosts(data,postElemClass) {
-    // Filter for actual posts. Comments don't have categories, therefore can filter for items with categories bigger than 0
-    const posts = data.slice(0, 4).filter(item => item.categories.length > 0) // That's the main trick* !
+function renderPosts(data,postElemClass,type) {
+    /**
+     * @param data: list of post objects with structure
+     * {
+     *  thumbnail: thubmnail image url,
+     *  link: link to post,
+     *  pubDate: publication date (ISO format) as string,
+     *  title: post title
+     * }
+     * @param postElemClass: class of html where post cards will be inserted into
+     * @param type: 'static' -> for static feeds. defaults to RSS if unset.
+     */
+
+    const posts = data.slice(0, 4).filter(item => {
+      if(type !== 'static'){
+        // Filter for actual posts. Comments don't have categories, therefore can filter for items with categories bigger than 0
+        // That's the main trick* !
+        return item.categories.length > 0
+      }else{
+        return true;
+      }
+    }) 
     // Put things in right spots of card
     let output = '';
     posts.forEach((item) => {
