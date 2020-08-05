@@ -1,3 +1,3 @@
 window.addEventListener('DOMContentLoaded', () => {
-    loadPosts('js-stt-blog')
+    loadPosts('js-about-blog')
 });

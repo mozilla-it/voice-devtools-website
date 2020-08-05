@@ -1,0 +1,26 @@
+.c-about-container{
+    padding: 0 0 96px;
+
+    > div:first-of-type{
+        padding-top: 36px;
+    }
+
+    @media (min-width: $content-md){
+        .mzp-l-content{
+            max-width: 610px;
+            padding: 64px 96px;
+        }
+    }
+
+    h4{
+        font-size: 38px;
+    }
+
+    .img-container{
+        text-align: center;
+    }
+
+    .c-blockquote{
+        margin-bottom: 0;
+    }
+}

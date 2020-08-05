@@ -1,3 +1,10 @@
+let mz_blog = 'https://blog.mozilla.org/blog/category/emerging-tech/feed';
+let moz_hacks = 'https://hacks.mozilla.org/author/rmoraismozilla-com/feed';
+var api = 'https://api.rss2json.com/v1/api.json?rss_url=';
+
+let urls = [`${api}${mz_blog}`,`${api}${moz_hacks}`]
+.map(url => fetch(url).then(res => res.json()));
+
 function postCard(post) {
     return `
     <section class="mzp-c-card mzp-has-aspect-16-9 mzp-c-card-extra-small">
@@ -11,6 +18,10 @@ function postCard(post) {
           </div>
        </a>
     </section>`
+}
+
+function sortByDate(a, b) {
+  return new Date(b.pubDate) - new Date(a.pubDate)
 }
 
 function renderPosts(data,postElemClass,type) {
@@ -41,4 +52,12 @@ function renderPosts(data,postElemClass,type) {
         output += postCard(item);
     })
     document.querySelector(`.${postElemClass}`).innerHTML = output
+}
+
+function loadPosts(className){
+    Promise.all(urls).then(async res => {
+      return res.map(obj => obj.items).flat().sort(sortByDate);
+    }).then( res => renderPosts(res,className)).catch(() => {
+        document.querySelector(`.${className}`).innerHTML = '<p>An error occured. Check your internet connection and then refresh the page</p>'
+    })
 }
