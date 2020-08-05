@@ -1,0 +1,91 @@
+---
+layout: default
+title: Partners
+permalink: /partners.html
+---
+
+{% include hero.html title="Partners & Collaborations" %}
+
+<section class="mzp-l-content c-decorative--container partners-intro-container">
+  <div
+    class="mzp-c-card-feature mzp-has-aspect-1-1 mzp-l-card-feature-left-half"
+  >
+    <div class="mzp-c-card-feature-media-wrapper">
+      <div class="mzp-c-card-feature-media">
+        <img src="./images/partners/partners-collaborations.png" alt="" />
+      </div>
+    </div>
+    <div class="mzp-c-card-feature-content c-decorative--content">
+      <div class="mzp-c-card-feature-content-container">
+        <p>
+          The way we are building and advancing our Mozilla Voice tools and the
+          Common Voice dataset is through global collaborations that include
+          volunteers, academic institutions, researchers, governments, NGOs,
+          startups, and established companies.
+        </p>
+        <p>
+          We are bringing together commercial and non-commercial actors that
+          have shared interests from a variety of sectors, each contributing
+          their piece to create high-value public resources that all can benefit
+          from and that none could build on their own.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="partners-list-container">
+    <section class="mzp-l-content mzp-t-mozilla l-3col--gray">
+      <div class="l-3col--dark-wrappers">
+        <div class="l-3col">
+          <h2 class="mzp-c-hero-title l-3col__col">Become a partner</h2>
+          <div class="l-3col__col">
+            <p>
+              We want to help overcome the barriers to broad innovation in the field
+              of voice technology, that researchers, entrepreneurs, startups and
+              even established companies are currently facing.
+            </p>
+            <p>
+              We’re convinced that by working in the open we can attract the
+              involvement and feedback of technologists, organisations, and
+              companies of all sizes and geographies that will make our projects and
+              tools more inclusive, robust and meaningful.
+            </p>
+          </div>
+          <div class="l-3col__col">
+            <p>
+              If you are part of an organization and have an idea for collaboration
+              in building open datasets, pooling resources or co-developing tools,
+              technology and customised applications, we’d love to talk (and
+              listen).
+            </p>
+            <b>Reach out to <a href="mailto:voice@mozilla.com">voice@mozilla.com</a> </b>
+          </div>
+        </div>
+      </div>
+    </section>
+    <img src="./images/partners/squares-bg.svg" id="partners-container-bg" alt="">
+    <div class="mzp-c-card-feature mzp-has-aspect-1-1 mzp-l-card-feature-left-half">
+        {% for partner in site.data.partners.data %}
+            <div class="partner mzp-c-details mzp-t-mozilla">
+              <h4>{{ partner.title }}</h4>
+                <div class="mobile--top">
+                  <h4 class="mobile--hidden">{{ partner.title }}</h4>
+                  <img src="{{ partner.banner }}" class="mobile--banner-img" alt="{{partner.title}}" />
+                </div>
+                <div class="mobile--body">
+                    <p>
+                        {{ partner.body }}
+                    </p>
+                    <div class="links">
+                        {% for link in partner.links %}
+                        <a href="{{link.url}}">{{link.description}}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include news.html title='Partner News' class='js-partner-news' js='/js/utils.js /js/partners.js' %}
+<script src="mozilla-protocol/js/protocol-details.min.js"></script>
