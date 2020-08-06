@@ -1,0 +1,241 @@
+.c-community{
+    $icons : '../images/icons/';
+
+    &--bg{
+        width: 100%;
+        overflow: hidden;
+        margin-top: -90px;
+
+        &__img{
+            max-width: initial;
+            margin-top: -30px;
+        }
+    }
+
+    &--intro{
+        max-width: 100%;
+        padding: 64px 94px;
+        margin-top: -40px;
+    }
+
+    &--container{
+        padding: 0 64px;
+
+        div.mzp-l-content:nth-child(2){
+            margin-bottom: 96px;
+        }
+    }
+
+    &--content{
+        max-width: 610px;
+
+        .mzp-c-card-feature-content{
+            margin-bottom: 48px;
+        }
+    }
+
+    &--card{
+        padding: 0;
+
+        &__links{
+            display: flex;
+            flex-direction: column;
+            padding-top: 66px;
+            min-height: 168px;
+
+            a{
+                display: flex;
+                margin-bottom: 24px;
+                &::before{
+                    display: inline-block;
+                    height: 24px;
+                    width: 24px;
+                    margin-right: 16px;
+                }
+
+                &:first-child::before{
+                    content: url('#{$icons}discussion.svg');
+                }
+
+                &:nth-child(2)::before{
+                    content: url('#{$icons}github.svg')
+                }
+
+                &:nth-child(3)::before{
+                    content: url('#{$icons}matrix.svg')
+                }
+
+                &:nth-child(4)::before{
+                    content: url('#{$icons}document.svg')
+                }
+            }
+        }
+    }
+
+    &--img-container{
+        padding-top: 20px;
+        width: 182px;
+    }
+
+    &--get-involved{
+        background-color: #EDEDF0;
+        padding-block: 64px;
+        padding-left: 32px;
+        margin-top: 161px;
+
+        h3{
+            font-weight: normal;
+        }
+
+       &__content{
+        display: flex;
+        margin-top: 32px;
+        div{
+            max-width: 501px;
+
+            &:first-child{
+                margin-right: 141px;
+            }
+        }
+       }
+    }
+
+    &--join{
+        display: flex;
+        margin-top: 97px;
+
+        &__content{
+            display: flex;
+            align-items: center;
+
+            div{
+                height: fit-content;
+            }
+
+            a{
+                display: flex;
+                margin-top: 32px;
+            }
+
+            .mzp-c-button{
+                max-width: 202px;
+            }
+        }
+    }
+
+    &--group-img{
+        max-width: 658px;
+        height: 597px;
+        overflow-y: hidden;
+    }
+    
+
+    // mobile upwards
+    @media (min-width: $content-md) {
+        &--intro{
+            padding-inline-start: 64px;
+        }
+    }
+
+    //tablet + 
+    @media (max-width: $screen-md){
+
+        &--intro{
+            padding: 24px 32px 24px 23px;
+            margin-top: 0;
+            grid-column-gap: 10px;
+        }
+        &--container{
+            padding: 0;
+
+            div.mzp-l-content:nth-child(2){
+                margin-bottom: 48px;
+            }
+        }
+
+        &--card{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .mzp-c-card{
+                width: 100% !important;
+            }
+
+            &__links{
+                width: 100% !important;
+                padding-top: 8px;
+            }
+        }
+
+        &--get-involved{
+            padding: 48px 24px;
+            margin-top: 96px;
+
+            &__content{
+                flex-direction: column;
+
+                h3{
+                    font-weight: bold;
+                    font-family: Inter;
+                    margin-bottom: 27px;
+                }
+    
+                div{
+                    max-width: 100%;
+                    &:first-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        &--group-img{
+            min-width: 380px;
+            height: calc(357px + 35vw);
+        }
+
+        &--join{
+            flex-direction: column-reverse;
+
+            &__content {
+                padding: 0 24px;
+                margin-bottom: 51px;
+
+                a:last-child::before{
+                    content: url('#{$icons}document.svg');
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    //edge case
+    @media (width: $screen-md){
+        &--get-involved,
+        &--join
+        {
+            padding-left: 64px;
+            padding-right: 64px;
+        }
+
+        &--get-involved{
+            h3{
+                font-size: 18px;
+            }
+        }
+
+        &--join__content{
+            padding: 0;
+        }
+        &--intro{
+            margin-top: -40px;
+            padding: 64px;
+        }
+
+        &--content{
+            max-width: 100%;
+        }
+    }
+}
+
