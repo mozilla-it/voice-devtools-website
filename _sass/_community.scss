@@ -1,16 +1,16 @@
+.has-squares-bg{
+    margin-top: -120px;
+    background-image: url('../images/squares-bg.svg');
+    background-repeat: no-repeat;
+    height: 126px;
+    &::after{
+        width: 100%;
+    }
+}
+
+
 .c-community{
     $icons : '../images/icons/';
-
-    &--bg{
-        width: 100%;
-        overflow: hidden;
-        margin-top: -90px;
-
-        &__img{
-            max-width: initial;
-            margin-top: -30px;
-        }
-    }
 
     &--intro{
         max-width: 100%;
@@ -20,7 +20,7 @@
 
     &--container{
         padding: 0 64px;
-
+        margin-top: 117px;
         div.mzp-l-content:nth-child(2){
             margin-bottom: 96px;
         }
