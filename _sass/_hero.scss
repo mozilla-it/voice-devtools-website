@@ -29,7 +29,7 @@
   }
 
   &--compact {
-    padding: 24px;
+    padding: 24px 0;
     overflow: hidden;
 
 
@@ -39,6 +39,10 @@
 
     .mzp-c-hero-title {
       margin: 8px 0 0;
+    }
+
+    .mzp-c-hero-body{
+      margin: 0;
     }
 
     .mzp-c-hero-image {
