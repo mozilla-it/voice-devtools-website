@@ -1,21 +1,8 @@
 .l-3col {
-  grid-template-columns: 1fr !important;
-
-  @media (min-width: #{$content-md}){
+  @media #{$mq-lg} {
     display: grid;
-    grid-template-columns: 1fr 1fr !important;
-    & div:nth-child(2){
-      grid-column: 1;
-    }
-  }
-
-  @media (min-width: #{$content-lg}) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
-    & div:nth-child(2){
-      grid-column: 2;
-    }
   }
 
   &--dark-wrapper {
