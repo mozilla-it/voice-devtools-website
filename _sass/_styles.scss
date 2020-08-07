@@ -118,6 +118,9 @@ $open-innovation-menu-differnce: 8px;
   margin-bottom: 45px;
   overflow-x: hidden;
 
+  .has-squares-bg{
+    margin-top: -90px;
+  }
 
   .l-3col--gray{
     padding: 64px 94px;
@@ -152,10 +155,6 @@ $open-innovation-menu-differnce: 8px;
       margin-top: 16px;
     }
   }
-}
-#partners-container-bg{
-  max-width: initial;
-  margin-top: -90px;
 }
 
 .partners-intro-container{
@@ -194,6 +193,10 @@ $open-innovation-menu-differnce: 8px;
     .l-3col--gray {
       padding-left: 24px;
       padding-right: 24px;
+    }
+
+    .has-squares-bg{
+      margin-bottom: 52.5px;
     }
 
     .mzp-c-card-feature{
