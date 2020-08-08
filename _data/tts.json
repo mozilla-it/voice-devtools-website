@@ -9,6 +9,8 @@
     "getting-started-col-2": "How to be part of it? Take a look at our <a rel=\"noopener noreferrer\" href=\"https://github.com/mozilla/TTS/wiki\">Mozilla Voice TTS 0.1</a> including a pre-trained English model, tools to reproduce our results, related documentations and an easy-to-use installation mechanism. Or join our TTS forum on <a rel=\"noopener noreferrer\" href=\"https://discourse.mozilla.org/c/deep-speech\">Discourse<a/>.",
     "getting-started-col-3":"",
     "repo": "https://github.com/mozilla/TTS",
+    "discussion-forum": "https://discourse.mozilla.org/c/tts",
+    "read-me":"https://github.com/mozilla/TTS/wiki",
     "js-news-class": "js-tts-blog",
     "js_urls":"/js/tts.js",
     "news-title": "Voice TTS News"
