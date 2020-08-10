@@ -109,6 +109,23 @@ $open-innovation-menu-differnce: 8px;
   }
 }
 
+  &--projects {
+    @media #{$mq-sm} and (max-width: $screen-lg){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: $spacing-xl;
+
+      section{
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+
+      > section:last-child{
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+}
 .partners-list-container{
   margin-bottom: 45px;
   overflow-x: hidden;
