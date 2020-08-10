@@ -109,6 +109,11 @@ $open-innovation-menu-differnce: 8px;
   }
 }
 
+.c-home{
+  &--projects h2, &--get-started h2{
+    font-family: Zilla Slab;
+  }
+
   &--projects {
     @media #{$mq-sm} and (max-width: $screen-lg){
       display: grid;
@@ -126,6 +131,7 @@ $open-innovation-menu-differnce: 8px;
     }
   }
 }
+
 .partners-list-container{
   margin-bottom: 45px;
   overflow-x: hidden;
