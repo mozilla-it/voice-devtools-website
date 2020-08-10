@@ -10,11 +10,11 @@ url: "" # The base hostname & protocol for your site, e.g. http://oi.mozilla.org
 #-------------------------------
 # Navigation Settings
 menu:
-  - {title: Projects, url: '/projects.html'}
-  - {title: News, url: '/news.html'}
-  - {title: Partners, url: '/partners.html'}
-  - {title: Community, url: '/community.html'}
-  - {title: About, url: '/about.html'}
+  - {title: Projects, url: '/projects'}
+  - {title: News, url: '/news'}
+  - {title: Partners, url: '/partners'}
+  - {title: Community, url: '/community'}
+  - {title: About, url: '/about'}
 
 #-------------------------------
 # Build settings
