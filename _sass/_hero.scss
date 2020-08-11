@@ -25,6 +25,13 @@
     & > .mzp-l-content {
       padding-top: 40px;
       padding-bottom: 0;
+
+      @media (max-width: $screen-md){
+        .mzp-c-hero-body{
+          width: 100%;
+          margin-right: auto;
+        }
+      }
     }
   }
 
