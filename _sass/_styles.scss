@@ -26,6 +26,7 @@ $open-innovation-menu-differnce: 8px;
 // Add a border bottom to active menu item.
 .mzp-c-menu-category .mzp-c-menu-title {
   border-bottom: 1px solid transparent;
+  padding-bottom: 26px;
 
   &:hover,
   &:active,
@@ -106,6 +107,29 @@ $open-innovation-menu-differnce: 8px;
 
   &--discussion {
     background-image: url("/images/icons/discussion.svg");
+  }
+}
+
+.c-home{
+  &--projects h2, &--get-started h2{
+    font-family: Zilla Slab;
+  }
+
+  &--projects {
+    @media #{$mq-sm} and (max-width: $screen-lg){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: $spacing-xl;
+
+      section{
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+
+      > section:last-child{
+        grid-column: 1 / span 2;
+      }
+    }
   }
 }
 
