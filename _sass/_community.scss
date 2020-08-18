@@ -1,8 +1,9 @@
 .has-squares-bg{
-    margin-top: -120px;
+    margin: -120px auto 0;
     background-image: url('../images/squares-bg.svg');
     background-repeat: no-repeat;
     height: 126px;
+    width: 1440px;
     &::after{
         width: 100%;
     }
@@ -14,7 +15,6 @@
 
     &--intro{
         max-width: 100%;
-        padding: 64px 94px;
         margin-top: -40px;
     }
 
@@ -103,6 +103,7 @@
     &--join{
         display: flex;
         margin-top: 97px;
+        padding-bottom: 0;
 
         &__content{
             display: flex;
@@ -128,7 +129,7 @@
         max-height: 597px;
         overflow-y: hidden;
     }
-    
+
 
     // mobile upwards
     @media (min-width: $content-md) {
@@ -137,7 +138,7 @@
         }
     }
 
-    //tablet + 
+    //tablet +
     @media (max-width: $screen-md){
 
         &--intro{
@@ -180,7 +181,7 @@
                     font-family: Inter;
                     margin-bottom: 27px;
                 }
-    
+
                 div{
                     max-width: 100%;
                     &:first-child{

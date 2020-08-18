@@ -1,3 +1,5 @@
+$content-max: 1228px;
+
 // Add extra spacing below homepage hero.
 @media #{$mq-lg} {
   .mzp-c-hero {
@@ -34,10 +36,13 @@ $open-innovation-menu-differnce: 8px;
   &.is-active {
     text-decoration: none;
     border-bottom: 1px solid $color-black;
+    cursor: pointer;
   }
 }
 
 .mzp-l-content {
+  max-width: $content-max;
+
   @media #{$mq-md} {
     padding: $layout-xs $layout-lg;
   }
@@ -148,8 +153,11 @@ $open-innovation-menu-differnce: 8px;
   }
 
   .mzp-c-card-feature{
-    margin: auto 94px;
+    // margin: auto 94px;
+    grid-column-gap: 96px;
+    display: grid;
     row-gap: 96px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -157,6 +165,7 @@ $open-innovation-menu-differnce: 8px;
   padding-inline: 32px;
   text-align: left;
   max-width: 610px;
+  // display: inline-block;
 
   button{
     visibility: hidden;
@@ -206,7 +215,7 @@ $open-innovation-menu-differnce: 8px;
   .partners-intro-container .mzp-c-card-feature {
     display: flex;
     flex-direction: column-reverse;
-  } 
+  }
 
   .partners-list-container {
     .l-3col--gray {
@@ -221,8 +230,8 @@ $open-innovation-menu-differnce: 8px;
     .mzp-c-card-feature{
       margin: auto 24px;
     }
-  } 
-  
+  }
+
   .partner {
     padding: 0px;
     max-width: 100%;
@@ -249,7 +258,7 @@ $open-innovation-menu-differnce: 8px;
       }
     }
   }
-  
+
   .mobile{
     &--hidden{
       display: none;

@@ -46,7 +46,7 @@
   &--gray {
     background-color: $color-marketing-gray-20;
     padding: 32px;
-    max-width: 1316px;
+    max-width: $content-max;
 
     .mzp-c-card-feature-media {
       overflow: visible;
