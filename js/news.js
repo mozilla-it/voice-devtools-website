@@ -4,8 +4,9 @@ let currentPage = 1;
 let pageCount = 1;
 let paginationButtons;
 let pageContentContainer;
+const postsCount = 6;
 
-let { hostname, pathname } = window.location;
+const { pathname } = window.location;
 
 function render(){
     /**
@@ -16,7 +17,7 @@ function render(){
     } else {
         paginationButtons[0].removeAttribute('disabled')
     }
-    let currentPageContent = newsFeed.slice((currentPage-1)*6,(currentPage)*6).map(obj => postCard(obj));
+    let currentPageContent = newsFeed.slice((currentPage-1)*postsCount,(currentPage)*postsCount).map(obj => postCard(obj));
     pageContentContainer.innerHTML = currentPageContent.join('');
     paginationText.innerHTML = `${currentPage} of ${pageCount}`
     
@@ -28,13 +29,11 @@ function render(){
 }
 
 function previousPage(){
-    console.log('go to prev')
     paginationButtons[1].removeAttribute('disabled');
     window.location.href = `${pathname}?page=${--currentPage}`;
 }
 
 function nextPage(){
-    console.log('go to next');
     paginationButtons[0].removeAttribute('disabled');
     window.location.href = `${pathname}?page=${++currentPage}`;
 }
@@ -46,15 +45,15 @@ window.addEventListener('DOMContentLoaded',async () => {
     newsFeed = await Promise.all(urls).then(res =>  res.map(obj => obj.items).flat().sort(sortByDate)).catch(() => {
         return `<p>Failed to load posts. Try refreshing the page</p>`
     });
-    pageCount = Math.ceil(newsFeed.length / 6);
+    pageCount = Math.ceil(newsFeed.length / postsCount);
 
-    let [ pageNum ] =  window.location.search ? window.location.search.match(/\d+/): [ null ];
+    let [ pageNum ] =  window.location.search && window.location.search.match(/\d+/) ? window.location.search.match(/\d+/): [ null ];
     pageNum = +pageNum;
 
     if (pageNum && (pageNum >= 1 && pageNum <= pageCount)){
         currentPage = pageNum
     } else {
-        currentPage = 1;
+        window.location.href = `${pathname}?page=1`;
     }
 
     if(currentPage == pageCount){
