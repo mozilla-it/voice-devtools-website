@@ -57,17 +57,6 @@
             ]
         },
         {
-            "banner":"mycroft-ai.png",
-            "title": "Mycroft AI",
-            "body": "<a href=\"https://mycroft.ai/\" rel=\"noopener noreferrer\">Mycroft</a> builds its voice assistant in the open so it can be remixed, extended, and improved -- which  aligns well with our own values and mission. Their developer team has been testing and working with our STT engine from very early on, providing valuable feedback throughout its development. Mycroft is offering a Mozilla Voice STT powered version of its voice assistant and has been a strong supporter of our Common Voice initiative to crowdsource open datasets for training.",
-            "links": [
-                {
-                    "description": "DeepSpeech in Mycroft",
-                    "url": "https://mycroft.ai/blog/deepspeech-update/"
-                }
-            ]
-        },
-        {
             "banner":"ibm.png",
             "title": "IBM",
             "body": "The <a href=\"https://www.ibm.com/opensource/centers/codait/\" rel=\"noopener noreferrer\">Center for Open Source Data and AI Technologies</a> (CODAIT) at IBM has been a vocal supporter of our Voice Developer Tools and open data collection: “It is time for open innovations in voice, with support and outreach for minor languages and dialects as well as popular languages – Mozilla’s Common Voice is a step in that direction.” - Jim Sporer, IBM. Opportunities to speak at IBM conferences as well as inclusion in IBM’s “Call for Code” program have helped bring our voice tools to the attention of a global developer audience.",
