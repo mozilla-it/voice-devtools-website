@@ -153,19 +153,19 @@ $open-innovation-menu-differnce: 8px;
   }
 
   .mzp-c-card-feature{
-    // margin: auto 94px;
     grid-column-gap: 96px;
     display: grid;
     row-gap: 96px;
     grid-template-columns: 1fr 1fr;
   }
+
+
 }
 
 .partner{
   padding-inline: 32px;
   text-align: left;
   max-width: 610px;
-  // display: inline-block;
 
   button{
     visibility: hidden;
@@ -195,6 +195,10 @@ $open-innovation-menu-differnce: 8px;
 
   .mzp-c-card-feature{
     margin-bottom: 0;
+
+    .mzp-c-card-feature-media img {
+      max-width: 390px;
+    }
   }
 }
 
