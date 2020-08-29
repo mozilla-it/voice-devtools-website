@@ -8,7 +8,7 @@
 
   &--background-image {
     @media #{$mq-md} {
-      background: url("/images/home/home-hero.png") no-repeat, $color-black;
+      background: url("/voice-devtools-images/home/home-hero.png") no-repeat, $color-black;
       padding: 72px 0 33px;
       background-size: auto 720px;
       background-position: 80% bottom;

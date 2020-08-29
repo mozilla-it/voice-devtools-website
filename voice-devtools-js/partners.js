@@ -14,12 +14,12 @@ window.addEventListener('DOMContentLoaded',() => {
     //load posts
     let posts = [
         {
-            thumbnail: "../images/partners/dlr.png",
+            thumbnail: "../voice-devtools-images/partners/dlr.png",
             link: "https://www.dlr.de/content/en/articles/news/2020/03/20200701_dlr-and-mozilla-researching-technologies-for-voice-control-of-robots.html",
             pubDate: "2020-07-01",
             title: "DLR Press Release"
         },{
-            thumbnail: "../images/partners/voice-thumbnail.png",
+            thumbnail: "../voice-devtools-images/partners/voice-thumbnail.png",
             link: "https://foundation.mozilla.org/en/blog/mozilla-welcomes-two-new-fellows-voice-technology/",
             pubDate: "2020-06-10",
             title: "Mozilla Welcomes Two New Fellows in Voice Technology"

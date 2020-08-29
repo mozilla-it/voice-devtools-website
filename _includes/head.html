@@ -5,13 +5,13 @@
   <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
 
   <link rel="shortcut icon" href="{{ '/favicon.ico' | absolute_url }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/favicon/apple-touch-icon.png' | absolute_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon/favicon-32x32.png' | absolute_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon/favicon-16x16.png' | absolute_url }}">
-  <link rel="manifest" href="{{ '/images/favicon/site.webmanifest' | absolute_url }}">
-  <link rel="mask-icon" href="{{ '/images/favicon/safari-pinned-tab.svg' | absolute_url }}" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/voice-devtools-images/favicon/apple-touch-icon.png' | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/voice-devtools-images/favicon/favicon-32x32.png' | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/voice-devtools-images/favicon/favicon-16x16.png' | absolute_url }}">
+  <link rel="manifest" href="{{ '/voice-devtools-images/favicon/site.webmanifest' | absolute_url }}">
+  <link rel="mask-icon" href="{{ '/voice-devtools-images/favicon/safari-pinned-tab.svg' | absolute_url }}" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="{{ '/images/favicon/browserconfig.xml' | absolute_url }}">
+  <meta name="msapplication-config" content="{{ '/voice-devtools-images/favicon/browserconfig.xml' | absolute_url }}">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Twitter -->
@@ -41,15 +41,15 @@
   {% endif %}
 
   <!-- begin CSS files -->
-  <link rel="stylesheet" href="{{ './mozilla-protocol/css/protocol.min.css' }}" />
-  <link rel="stylesheet" href="{{ './mozilla-protocol/css/protocol-extra.min.css' }}" />
-  <link rel="stylesheet" href="{{ './css/main.css' }}" />
+  <link rel="stylesheet" href="{{ './voice-devtools-mozilla-protocol/css/protocol.min.css' }}" />
+  <link rel="stylesheet" href="{{ './voice-devtools-mozilla-protocol/css/protocol-extra.min.css' }}" />
+  <link rel="stylesheet" href="{{ './voice-devtools-css/main.css' }}" />
   <!-- begin CSS files -->
 
   <!-- begin javascript files -->
-  <script src="{{ './mozilla-protocol/js/protocol-base.js' }}"></script>
-  <script src="{{ './mozilla-protocol/js/protocol-utils.js' }}"></script>
-  <script src="{{ './mozilla-protocol/js/protocol-supports.js' }}"></script>
+  <script src="{{ './voice-devtools-mozilla-protocol/js/protocol-base.js' }}"></script>
+  <script src="{{ './voice-devtools-mozilla-protocol/js/protocol-utils.js' }}"></script>
+  <script src="{{ './voice-devtools-mozilla-protocol/js/protocol-supports.js' }}"></script>
   <!-- end javascript files -->
   {% include google-analytics.html %}
 </head>

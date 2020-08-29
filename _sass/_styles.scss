@@ -107,11 +107,11 @@ $open-innovation-menu-differnce: 8px;
   background-position: 30px center;
 
   &--github {
-    background-image: url("/images/icons/github.svg");
+    background-image: url("/voice-devtools-images/icons/github.svg");
   }
 
   &--discussion {
-    background-image: url("/images/icons/discussion.svg");
+    background-image: url("/voice-devtools-images/icons/discussion.svg");
   }
 }
 
@@ -257,7 +257,7 @@ $open-innovation-menu-differnce: 8px;
       margin-bottom: 55px;
 
       &::before{
-        content: url('../images/icons/document.svg');
+        content: url('../voice-devtools-images/icons/document.svg');
         margin-right: 10px;
       }
     }

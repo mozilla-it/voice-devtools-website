@@ -1,6 +1,6 @@
 .has-squares-bg{
     margin: -120px auto 0;
-    background-image: url('../images/squares-bg.svg');
+    background-image: url('../voice-devtools-images/squares-bg.svg');
     background-repeat: no-repeat;
     height: 126px;
     width: 1440px;
@@ -11,7 +11,7 @@
 
 
 .c-community{
-    $icons : '../images/icons/';
+    $icons : '../voice-devtools-images/icons/';
 
     &--intro{
         max-width: 100%;
