@@ -2,7 +2,7 @@
 # General Site Settings
 title: "Mozilla Voice"
 description: "The new home for machine-learning based voice technologies - including software, tools, and datasets. Common Voice is Mozilla's global crowdsourcing initiative to build multilingual open voice datasets that help teach machines how real people speak."
-open_graph_image: "/images/home/common-voice-bot.png"
+open_graph_image: "/voice-devtools-images/home/common-voice-bot.png"
 open_graph_image_alt: "Mozilla Voice"
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://oi.mozilla.org

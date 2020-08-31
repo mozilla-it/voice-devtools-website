@@ -1,6 +1,6 @@
 {
     "hero-title": "Mozilla Voice TTS",
-    "decorative-img-src": "./images/tts-stt/voice-tts.jpg",
+    "decorative-img-src": "./voice-devtools-images/home/voice-tts.png",
     "description-title": "Speech synthesis is a very challenging task due to its high technical requirements. We want to help overcome those.",
     "description-body-p1": "Started as a research project, Mozilla Voice TTS is an early stage, open source Text-to-Speech solution which aims to provide the tools necessary for developers to create TTS systems, including conversational interfaces, smart assistants, and accessibility tools.",
     "description-body-p2": "Mozilla Voice TTS is based on advanced machine learning methods (Tacotron) which enable high quality, natural voice synthesis, enabling comparable or better results in relation to any currently existing commercial or open-source solution. ",
@@ -12,6 +12,6 @@
     "discussion-forum": "https://discourse.mozilla.org/c/tts",
     "read-me":"https://github.com/mozilla/TTS/wiki",
     "js-news-class": "js-tts-blog",
-    "js_urls":"/js/tts.js",
+    "js_urls":"/voice-devtools-js/tts.js",
     "news-title": "Voice TTS News"
 }

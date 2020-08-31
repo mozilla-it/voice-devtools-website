@@ -1,6 +1,6 @@
 {
     "hero-title": "Mozilla Voice STT",
-    "decorative-img-src": "./images/tts-stt/voice-stt.jpg",
+    "decorative-img-src": "./voice-devtools-images/home/voice-stt.png",
     "description-title": "Mozilla Voice STT (formerly research project “Deep Speech”) is an advanced open-source Speech-to-Textengine which aims to make speech recognition technology openly available to developers.",
     "description-body-p1": "Supported by a community of like-minded developers, companies, and researchers, we have applied sophisticated machine learning techniques and a variety of innovations to build a deep learning-based STT engine that approaches human accuracy. Implemented with Google’s TensorFlow framework, it can run on anything from an off-line Raspberry Pi 4 to a server class machine, obviating the need to pay patent royalties or exorbitant fees for existing STT services.",
     "description-body-p2": "Together with the growing Common Voice dataset we believe this technology can and will enable a wave of innovative products and services, and that it should be available to everyone.",
@@ -12,6 +12,6 @@
     "discussion-forum":"https://discourse.mozilla.org/c/tts/285",
     "read-me":"https://deepspeech.readthedocs.io/en/latest/index.html",
     "js-news-class": "js-stt-blog",
-    "js_urls":"/js/stt.js",
+    "js_urls":"/voice-devtools-js/stt.js",
     "news-title": "Voice STT News"
 }
